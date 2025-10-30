@@ -2,6 +2,6 @@ services:
   - type: web
     name: mangocure-api
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: bash start.sh
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: bash backend/start.sh
     plan: free

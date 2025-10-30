@@ -1,2 +1,2 @@
-#!/bin/bash
-uvicorn backend.app:app --host 0.0.0.0 --port 10000
+#!/usr/bin/env bash
+gunicorn app:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
