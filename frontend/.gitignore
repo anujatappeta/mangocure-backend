@@ -1,0 +1,90 @@
+# ===========================
+# 🧠 MANGOCURE FULL PROJECT
+# FastAPI + React + Capacitor
+# ===========================
+
+# ---------- Logs ----------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------- Node / React ----------
+node_modules/
+dist/
+dist-ssr/
+*.local
+*.env
+*.env.*
+.vite/
+.next/
+build/
+coverage/
+package-lock.json
+
+# ---------- Python / FastAPI ----------
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+*.db
+.env
+.venv/
+venv/
+env/
+*.bak
+*.tmp
+*.pkl
+
+# ---------- ML Models & Checkpoints ----------
+*.pth
+*.ckpt
+*.onnx
+
+# ---------- Cache / Artifacts ----------
+.cache/
+.mypy_cache/
+pytest_cache/
+__pypackages__/
+*.spec
+*.torch/
+*.timm/
+~/.torch/
+~/.cache/
+~/.timm/
+
+# ---------- Capacitor / Mobile ----------
+frontend/android/
+frontend/ios/
+frontend/icons/
+frontend/resources/
+frontend/.capacitor/
+frontend/capacitor.config.json.backup
+
+# ---------- OS / Editor ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---------- Render / Deployment ----------
+render.yaml
+start.sh
+
+# ---------- Misc ----------
+*.zip
+*.rar
+*.tar
+*.gz

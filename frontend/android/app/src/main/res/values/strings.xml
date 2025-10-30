@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MangoCure</string>
+    <string name="title_activity_main">MangoCure</string>
+    <string name="package_name">com.mangocure.app</string>
+    <string name="custom_url_scheme">com.mangocure.app</string>
+</resources>

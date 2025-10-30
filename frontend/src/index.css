@@ -1,0 +1,122 @@
+:root {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #2b2b2b;
+  background-color: #f4fff1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-green: #2b7a0b;
+  --accent-green: #4caf50;
+  --light-green-bg: #f4fff1;
+  --danger-red: #ff4d4d;
+  --info-orange: #e65100;
+}
+
+/* GENERAL RESET */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: var(--light-green-bg);
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 {
+  color: var(--primary-green);
+  margin-bottom: 0.6em;
+}
+
+p {
+  margin: 0.5em 0;
+  color: #333;
+  font-size: clamp(14px, 2vw, 17px);
+}
+
+/* BUTTONS */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.7em 1.4em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* ICON BUTTONS (like crop, delete, upload) */
+.icon-btn {
+  border-radius: 50%;
+  padding: 0.6em 0.8em;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE IMAGE */
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* LINKS */
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE CENTERING */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* LIGHT / DARK MODE TOGGLE SUPPORT */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1a1a1a;
+    color: #e4e4e4;
+  }
+
+  button {
+    background-color: #2a2a2a;
+    color: white;
+  }
+
+  .icon-btn {
+    background-color: #333;
+  }
+}
