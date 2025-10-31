@@ -4,3 +4,5 @@ timm
 flask
 Pillow
 gunicorn
+uvicorn
+fastapi
